@@ -1,0 +1,112 @@
+
+.carousel {
+    color: white;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+}
+ 
+.CarouselContent {
+    max-width: 500px;
+    margin: 80px 100px;
+}
+ 
+.carousel h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+ 
+.carousel p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+ 
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+ 
+.left-arrow {
+    left: 0;
+    background-image: url('../../assets/images/leftArrow.svg');
+}
+ 
+.right-arrow {
+    right: 0;
+    background-image: url('../../assets/images/rightArrow.svg');
+}
+ 
+@media (max-width: 768px) {
+    .CarouselContent {
+        margin: 20px auto;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+ 
+    }
+ 
+    .carousel h1 {
+        font-size: 20px;
+    }
+ 
+    .carousel p {
+        font-size: 14px;
+    }
+ 
+    .left-arrow,
+    .right-arrow {
+        width: 24px;
+        height: 24px;
+        top: 100px;
+    }
+ 
+    .btn{
+        margin-left: auto;
+        margin-right: auto;
+        align-self: flex-end;
+        flex-grow: 1;
+    }
+ 
+ 
+}
+ 
+.btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #885EF0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    align-self: flex-end;
+}
+.btn:hover {
+    background-color: #714fc7;
+}
+ 
+ 
+@media( max-width: 1300px ) {
+    .VioletColor {
+        padding: 7px 15px;
+        font-size: 13px;
+    }
+}

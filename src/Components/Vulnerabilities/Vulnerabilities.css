@@ -1,0 +1,101 @@
+.vulnerabilities-container {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 32px 28px;
+  background: #f8f9fa;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60,60,60,0.10);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.vulnerabilities-container h1 {
+  text-align: center;
+  margin-bottom: 36px;
+  color: #2d2d2d;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.vulnerabilities-container h2 {
+  margin-top: 40px;
+  margin-bottom: 18px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vulnerabilities-container h2.high {
+  color: #d32f2f;
+}
+.vulnerabilities-container h2.medium {
+  color: #f57c00;
+}
+.vulnerabilities-container h2.low {
+  color: #388e3c;
+}
+
+.vulnerabilities-container h3 {
+  margin-top: 22px;
+  margin-bottom: 10px;
+  font-size: 1.18rem;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.vulnerabilities-category-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(60,60,60,0.06);
+  padding: 18px 22px 10px 22px;
+  margin-bottom: 24px;
+  transition: box-shadow 0.2s;
+}
+.vulnerabilities-category-card:hover {
+  box-shadow: 0 6px 24px rgba(60,60,60,0.13);
+}
+
+.vulnerabilities-container ul {
+  list-style: disc inside;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.vulnerabilities-container li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  background: #f3f3f7;
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: background 0.2s;
+}
+.vulnerabilities-container li:hover {
+  background: #e0e7ff;
+}
+
+.vulnerabilities-container a {
+  color: #5a3ec8;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.vulnerabilities-container a:hover {
+  color: #2d1a7f;
+}
+
+.vulnerabilities-container .high {
+  color: #d32f2f;
+}
+
+.vulnerabilities-container .medium {
+  color: #f57c00;
+}
+
+.vulnerabilities-container .low {
+  color: #388e3c;
+} 

@@ -1,0 +1,19 @@
+.scan-site-btn {
+  background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(123,47,242,0.08);
+  transition: background 0.2s, transform 0.2s;
+  margin: 18px auto;
+  display: block;
+}
+
+.scan-site-btn:hover {
+  background: linear-gradient(90deg, #5a3ec8 0%, #d72660 100%);
+  transform: translateY(-2px) scale(1.04);
+} 

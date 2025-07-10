@@ -1,0 +1,64 @@
+.cardsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.RecSecDesc {
+    margin: 10px 290px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Default: left aligned */
+}
+
+.RecSecDesc h2 {
+    color: #425656;
+    margin: 5px 0;
+}
+
+.RecSecDesc a {
+    color: #308afb;
+    text-decoration: none;
+    text-align: center;
+}
+
+.RecSecCards {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+/* Medium Screens */
+@media (max-width: 1300px) {
+    .RecSecDesc {
+        margin: 10px 290px;
+    }
+    .RecSecDesc h2 {
+        font-size: x-large;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .RecSecDesc {
+        margin: 10px 60px;
+        text-align: center;
+        align-items: center;
+    }
+    .RecSecDesc h2 {
+        font-size: large;
+    }
+
+    .RecSecCards {
+        justify-content: center; /* center all cards */
+    }
+
+    .RecSecCards > div { /* direct child cards */
+        margin: 10px 0; /* some vertical space */
+        width: 80%; /* or 90%, to not take full width */
+        max-width: 400px; /* optional, to limit maximum */
+    }
+}

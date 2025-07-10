@@ -1,0 +1,113 @@
+.FooterSection {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #F3F1F9;
+}
+ 
+.FooterPagesSection {
+    display: flex;
+    justify-content: center;
+    margin: auto 90px;
+    gap: 130px;
+    text-align: left;
+}
+ 
+.FooterLinkSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 5%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+ 
+.FooterLinkSection img {
+    margin: 0 5px;
+}
+ 
+.FooterLinkSection p {
+    margin: 0;
+    font-size: 1rem;
+}
+ 
+a {
+    text-decoration: none;
+    text-align: left;
+    color: #425656;
+}
+ 
+.FooterLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+ 
+.FooterLinks p {
+    margin: 0 10px;
+}
+ 
+/* Tablet View */
+@media (max-width: 1300px) {
+    .FooterPagesSection {
+        display: none;
+    }
+    .FooterLinkSection {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 2rem 5%;
+    }
+    .FooterLinks {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .FooterLinks p {
+        font-size: 0.9rem;
+    }
+}
+ 
+/* Mobile View */
+@media (max-width: 768px) {
+    .FooterPagesSection {
+        display: none;
+    }
+   
+    .FooterLinkSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 5%;
+    }
+ 
+    .FooterLinkSection img {
+        margin: 0 5px;
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+ 
+    .FooterLinkSection p.title {
+        text-align: center;
+        font-size: 0.6rem;
+        margin-top:1rem;
+        width: 100%;
+    }
+    .FooterLinks {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom:1rem;
+        gap: 0.05rem;
+    }
+ 
+    .FooterLinks p {
+        font-size: 0.5rem;
+        white-space: nowrap;
+    }
+}
+ 

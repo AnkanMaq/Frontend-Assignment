@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.HeaderSection {
+    background-image: url("../../assets/images/headerBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 493px;
+    width: 97%;
+    object-fit: cover;
+    margin: 2rem;
+    border-radius: 20px;
+}
+ 
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+ 
+    img {
+        margin: 0 20px;
+    }
+}
+ 
+.ProfileDropdown {
+    select {
+        border: none;
+        color: #885EF0;
+        font-size: 16px;
+        width: 110px;
+        height: 38px;
+        border-radius: 7px;
+        padding: 5px;
+    }
+}
+ 
+.Navlinks {
+    display: flex;
+    flex-direction: column;
+ 
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+ 
+    li {
+        float: left;
+    }
+ 
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+ 
+form {
+    left: 40%;
+    top: 6%;
+    position: absolute;
+    input{
+        border: 2px solid white;
+        height: 35px;
+    width: 270px;border-color: white;
+   border-radius: 6px 6px 6px 6px;
+   }
+   button{
+    background-color: white;
+    border: 2px solid white;
+    position: absolute;
+    right: 5%;
+    margin-top: 3px;
+    width: 50px;
+   }
+   
+}
+ 
+.UserProfile {
+    align-items: center;
+    margin: 5px 0 0 auto;
+    justify-content: center;
+    display: flex;
+ 
+    img {
+        border: solid 2px white;
+        border-radius: 20px;
+    }
+}
+ 
+ 
+ 
+@media(min-width:2560px){
+    form{
+        position: absolute;
+        top: 8%;
+    }
+}
+@media(max-width:1440px){
+    form{
+        position: absolute;
+        top: 10%;
+    }
+}
+@media (max-width: 1300px) {
+    .HeaderSection {
+        background-image: url("../../assets/images/headerBackground.png");
+        height: 493px;
+        max-width: 1000px;
+        object-fit: cover;
+        margin: 3rem auto;
+    }
+    .Navlinks {
+        display: flex;
+        flex-direction: column;
+   
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+   
+        li {
+            float: left;
+        }
+   
+        li a {
+            font-size: small;
+        }
+    }
+}
+@media(max-width:1024px){
+    form{
+        position: absolute;
+        top: 15%;
+    }
+}
+ 
+@media(max-width:768px){
+    form{
+        position: absolute;
+        top: 6%;
+        left:53% ;
+        input{
+            width: 170px;
+            height: 30px;
+        }
+        button{
+            height: 5px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .HeaderSection {
+        width: auto;
+        height: auto;
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+ 
+    .Header {
+        padding: 10px;
+    }
+ 
+    .ProfileDropdown select {
+        width: 60px;
+        font-size: 14px;
+    }
+ 
+    .SearchBox {
+        margin: 8px 0 0 20px;
+        width: 150px;
+        font-size: 13px;
+    }
+}
+@media(max-width:425px){
+    .HeaderSection{
+        width: 400px;
+    }
+    .SearchBox,.Navlinks{
+        display: none;
+    }
+    #logoid{
+        position: relative;
+        left: 40%;
+    }
+}
+/* Hamburger menu (hidden for desktop) */
+.HamburgerMenu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+ 
+.Line {
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+ 
+.MobileSearchIcon {
+    display: none;
+}
+ 
+@media (max-width: 768px) {
+    .HamburgerMenu {
+        display: flex;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+ 
+    .Navlinks,
+    .SearchBox,
+    .UserProfile {
+        display: none;
+    }
+ 
+    .MobileSearchIcon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 22px;
+    }
+ 
+    #logoid {
+        position: absolute;
+        top:20px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 25px;
+    }
+}
+ 
+@media (max-width: 425px) {
+    .HeaderSection {
+        width: 95%;
+    }
+ 
+    .HamburgerMenu {
+        width: 22px;
+        height: 16px;
+    }
+ 
+    .Line {
+        height: 2.5px;
+    }
+}

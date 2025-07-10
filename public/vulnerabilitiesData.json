@@ -1,0 +1,252 @@
+{
+  "high": [
+    {
+      "category": "Denial of Service (DoS) / Resource Consumption",
+      "items": [
+        {
+          "name": "http-proxy-middleware@2.0.6",
+          "title": "Denial of Service (DoS)",
+          "description": "Allows attackers to overload the server by sending specially crafted requests, potentially causing the application to become unresponsive or crash.",
+          "resolution": "Upgrade to version 2.0.7 or later to resolve this issue.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-HTTPPROXYMIDDLEWARE-8229906",
+          "fix": "2.0.7, 3.0.3"
+        },
+        {
+          "name": "body-parser@1.20.2",
+          "title": "Asymmetric Resource Consumption (Amplification)",
+          "description": "Attackers can exploit this vulnerability to amplify resource usage, leading to degraded performance or denial of service.",
+          "resolution": "Upgrade to version 1.20.3 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-BODYPARSER-7926860",
+          "fix": "1.20.3"
+        },
+        {
+          "name": "micromatch@4.0.7",
+          "title": "Inefficient Regular Expression Complexity",
+          "description": "Complex regular expressions can be exploited to cause excessive backtracking, resulting in high CPU usage and potential DoS.",
+          "resolution": "Update to version 4.0.8 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-MICROMATCH-6838728",
+          "fix": "4.0.8"
+        }
+      ]
+    },
+    {
+      "category": "Regular Expression Denial of Service (ReDoS)",
+      "items": [
+        {
+          "name": "nth-check@1.0.2",
+          "title": "ReDoS",
+          "description": "Improperly handled regular expressions can be abused to cause excessive computation, leading to denial of service.",
+          "resolution": "Upgrade to version 2.0.1 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-NTHCHECK-1586032",
+          "fix": "2.0.1"
+        }
+      ]
+    },
+    {
+      "category": "Origin Validation Error",
+      "items": [
+        {
+          "name": "webpack-dev-server@4.15.2",
+          "title": "Origin Validation Error",
+          "description": "Insufficient validation of request origins can allow attackers to bypass security controls, potentially leading to cross-site attacks.",
+          "resolution": "Upgrade to version 5.2.1 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-WEBPACKDEVSERVER-10300775",
+          "fix": "5.2.1"
+        }
+      ]
+    }
+  ],
+  "medium": [
+    {
+      "category": "Cross-site Scripting (XSS)",
+      "items": [
+        {
+          "name": "cookie@0.6.0",
+          "title": "XSS",
+          "description": "Allows attackers to inject malicious scripts into web pages viewed by other users, potentially stealing data or hijacking sessions.",
+          "resolution": "Upgrade to version 0.7.0 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-COOKIE-8163060",
+          "fix": "0.7.0"
+        },
+        {
+          "name": "express@4.19.2",
+          "title": "XSS",
+          "description": "Improper input sanitization can allow attackers to execute scripts in the context of the user's browser.",
+          "resolution": "Update to version 4.20.0 or later and ensure proper input validation.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-EXPRESS-7926867",
+          "fix": "4.20.0, 5.0.0"
+        },
+        {
+          "name": "rollup@2.79.1",
+          "title": "XSS",
+          "description": "Vulnerable to cross-site scripting attacks, which can compromise user data and site integrity.",
+          "resolution": "Upgrade to version 2.79.2 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-ROLLUP-8073097",
+          "fix": "2.79.2, 3.29.5, 4.22.4"
+        },
+        {
+          "name": "serialize-javascript@4.0.0",
+          "title": "XSS",
+          "description": "Improper serialization can allow attackers to inject scripts, leading to XSS attacks.",
+          "resolution": "Update to version 6.0.2 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-SERIALIZEJAVASCRIPT-6147607",
+          "fix": "6.0.2"
+        },
+        {
+          "name": "webpack@5.92.1",
+          "title": "XSS",
+          "description": "Vulnerable to cross-site scripting, which can allow attackers to execute arbitrary scripts in the user's browser.",
+          "resolution": "Upgrade to version 5.94.0 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-WEBPACK-7840298",
+          "fix": "5.94.0"
+        }
+      ]
+    },
+    {
+      "category": "Regular Expression Denial of Service (ReDoS)",
+      "items": [
+        {
+          "name": "@babel/helpers@7.24.7",
+          "title": "ReDoS",
+          "description": "Improperly handled regular expressions can be exploited to cause excessive computation, leading to denial of service.",
+          "resolution": "Upgrade to version 7.26.10 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-BABELHELPERS-9397697",
+          "fix": "7.26.10, 8.0.0-alpha.17"
+        },
+        {
+          "name": "@babel/runtime@7.24.7",
+          "title": "ReDoS",
+          "description": "Improperly handled regular expressions can be exploited to cause excessive computation, leading to denial of service.",
+          "resolution": "Upgrade to version 7.26.10 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-BABELRUNTIME-10044504",
+          "fix": "7.26.10, 8.0.0-alpha.17"
+        },
+        {
+          "name": "path-to-regexp@0.1.7",
+          "title": "ReDoS",
+          "description": "Vulnerable to regular expression denial of service, which can be exploited to slow down or crash the application.",
+          "resolution": "Upgrade to version 0.1.10 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-PATHTOREGEXP-7925106",
+          "fix": "0.1.10, 1.9.0, 3.3.0, 6.3.0, 8.0.0"
+        },
+        {
+          "name": "path-to-regexp@0.1.7",
+          "title": "ReDoS",
+          "description": "Vulnerable to regular expression denial of service, which can be exploited to slow down or crash the application.",
+          "resolution": "Upgrade to version 0.1.12 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-PATHTOREGEXP-8482416",
+          "fix": "0.1.12"
+        }
+      ]
+    },
+    {
+      "category": "Improper Input Validation",
+      "items": [
+        {
+          "name": "nanoid@3.3.7",
+          "title": "Improper Input Validation",
+          "description": "Improper input validation can allow attackers to inject malicious data, potentially leading to security breaches.",
+          "resolution": "Upgrade to version 3.3.8 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-NANOID-8492085",
+          "fix": "3.3.8, 5.0.9"
+        },
+        {
+          "name": "postcss@7.0.39",
+          "title": "Improper Input Validation",
+          "description": "Improper input validation can allow attackers to inject malicious data, potentially leading to security breaches.",
+          "resolution": "Upgrade to version 8.4.31 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-POSTCSS-5926692",
+          "fix": "8.4.31"
+        }
+      ]
+    },
+    {
+      "category": "Always-Incorrect Control Flow Implementation",
+      "items": [
+        {
+          "name": "http-proxy-middleware@2.0.6",
+          "title": "Always-Incorrect Control Flow",
+          "description": "Incorrect control flow implementation can lead to unexpected behavior and potential security risks.",
+          "resolution": "Upgrade to version 2.0.8 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-HTTPPROXYMIDDLEWARE-9691387",
+          "fix": "2.0.8, 3.0.4"
+        }
+      ]
+    },
+    {
+      "category": "Improper Check for Unusual or Exceptional Conditions",
+      "items": [
+        {
+          "name": "http-proxy-middleware@2.0.6",
+          "title": "Improper Check",
+          "description": "Improper checks for exceptional conditions can allow attackers to exploit edge cases, potentially leading to security issues.",
+          "resolution": "Upgrade to version 2.0.9 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-HTTPPROXYMIDDLEWARE-9691389",
+          "fix": "2.0.9, 3.0.5"
+        }
+      ]
+    },
+    {
+      "category": "Exposed Dangerous Method or Function",
+      "items": [
+        {
+          "name": "webpack-dev-server@4.15.2",
+          "title": "Exposed Dangerous Method",
+          "description": "Exposing dangerous methods or functions can allow attackers to perform unauthorized actions.",
+          "resolution": "Upgrade to version 5.2.1 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-WEBPACKDEVSERVER-10300777",
+          "fix": "5.2.1"
+        }
+      ]
+    },
+    {
+      "category": "Missing Release of Resource after Effective Lifetime",
+      "items": [
+        {
+          "name": "inflight@1.0.6",
+          "title": "Missing Release of Resource",
+          "description": "Failure to release resources after use can lead to resource leaks and degraded performance.",
+          "resolution": "No fix available. Consider replacing the dependency if possible.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-INFLIGHT-6095116",
+          "fix": null
+        }
+      ]
+    }
+  ],
+  "low": [
+    {
+      "category": "Regular Expression Denial of Service (ReDoS)",
+      "items": [
+        {
+          "name": "brace-expansion@2.0.1",
+          "title": "ReDoS",
+          "description": "Improperly handled regular expressions can be exploited to cause excessive computation, leading to denial of service.",
+          "resolution": "Upgrade to version 1.1.12 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-BRACEEXPANSION-9789073",
+          "fix": "1.1.12, 2.0.2, 3.0.1, 4.0.1"
+        }
+      ]
+    },
+    {
+      "category": "Cross-site Scripting (XSS)",
+      "items": [
+        {
+          "name": "send@0.18.0",
+          "title": "XSS",
+          "description": "Allows attackers to inject malicious scripts into web pages viewed by other users, potentially stealing data or hijacking sessions.",
+          "resolution": "Upgrade to version 0.19.0 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-SEND-7926862",
+          "fix": "0.19.0, 1.1.0"
+        },
+        {
+          "name": "serve-static@1.15.0",
+          "title": "XSS",
+          "description": "Allows attackers to inject malicious scripts into web pages viewed by other users, potentially stealing data or hijacking sessions.",
+          "resolution": "Upgrade to version 1.16.0 or later.",
+          "url": "https://security.snyk.io/vuln/SNYK-JS-SERVESTATIC-7926865",
+          "fix": "1.16.0, 2.1.0"
+        }
+      ]
+    }
+  ]
+} 

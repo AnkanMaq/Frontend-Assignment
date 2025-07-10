@@ -1,0 +1,70 @@
+.CardAvailableServices {
+    padding: 20px;
+    width: 298px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.8;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* LEFT align by default */
+    justify-content: center;
+    text-align: left; /* Text left-aligned */
+}
+
+.heading {
+    font-weight: 400;
+    font-size: 75px;
+    color: #885EF0;
+    opacity: 1;
+    margin: 0;
+    text-align: left; /* Heading left by default */
+}
+
+.heading2 {
+    margin: 0;
+    color: #425656;
+    opacity: 1;
+    font-weight: bold;
+    text-align: left;
+}
+
+.para {
+    margin-top: 8px;
+    color: #425656;
+    opacity: 1;
+    text-align: left;
+}
+
+/* For Medium Screens */
+@media (max-width: 1300px) {
+    .CardAvailableServices {
+        width: 298px;
+        height: 220px;
+    }
+    .heading {
+        font-size: 65px;
+        margin: 10px 0;
+    }
+}
+
+/* For Small Screens */
+@media (max-width: 768px) {
+    .CardAvailableServices {
+        width: 70%;
+        height: auto;
+        margin: 15px auto;
+        align-items: center; /* CENTER items */
+        text-align: center; /* CENTER text inside */
+    }
+    .heading {
+        font-size: 45px;
+        margin: 10px 0;
+        text-align: center; /* Center heading */
+    }
+    .heading2, .para {
+        font-size: 14px;
+        text-align: center; /* Center subheading and paragraph */
+    }
+}
